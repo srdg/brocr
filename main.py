@@ -51,3 +51,7 @@ def uploaded_file(filename):
     # remove uploaded file to eliminate redundancies and use less storage
     os.remove(os.path.join(app.config['UPLOAD_FOLDER'], filename))
     return render_template("ocr.html",content=ocr_text)
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
