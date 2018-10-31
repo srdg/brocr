@@ -1,3 +1,2 @@
-https://github.com/srdg/heroku-buildpack-multi
 https://github.com/ddollar/heroku-buildpack-apt
-https://github.com/LeoKotschenreuther/python-tesseract-buildpack
+https://github.com/fouady/heroku-buildpack-tesseract.git
