@@ -1,3 +1,4 @@
 https://github.com/heroku/_YOUR_MAIN_BUILDPACK
+https://github.com/srdg/heroku-buildpack-multi
 https://github.com/ddollar/heroku-buildpack-apt
-https://github.com/pathwaysmedical/heroku-buildpack-tesseract
+https://github.com/Papiel/heroku-buildpack-tesseract
