@@ -22,7 +22,9 @@ Version created : Oct 31, 2018
 			padding-right: 10px;
 			position: absolute;
 			
+			
 		}
+
 
 		a {
 			color: white;
@@ -30,7 +32,21 @@ Version created : Oct 31, 2018
 		a:active a:hover a:visited{
 			color: grey;
 		}
+
+		@media screen and (max-width: 400px) {
+			.desc{
+				position: relative;
+				margin-left: 1%;
+				margin-top: 2%;
+			}
+
+			.responsive {
+				max-width: 80%;
+			}
+  		}
+}
 	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<div class="head" style="margin-top: 0%;">
@@ -41,7 +57,7 @@ Version created : Oct 31, 2018
 		You will be redirected to another window containing the OCR text. Do keep in mind
 		it might take some time to perform the OCR depending on the amount of text in the image.</p></div>
 	</div>
-		<img src="{{url_for('static',filename='logo-large.png')}}" style="margin-left: 0%;">
+		<img src="{{url_for('static',filename='logo-large.png')}}" style="margin-left: 0%;" class="responsive">
 		
 	<div class="main">
 		
@@ -52,7 +68,7 @@ Version created : Oct 31, 2018
 	      <select name="lang"> 
 			  <option value="eng">English</option>
 			  <option value="ben">Bengali</option>
-		</select> Choose text language
+		</select> <span style="font-size: 5pt;">Choose text language<span>
 		<br>
 	      <input type=submit value=Upload>
 	    </form>
